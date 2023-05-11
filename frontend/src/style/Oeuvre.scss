@@ -1,0 +1,38 @@
+.containerOeuvre {
+  background-image: url("/src/assets/image/BackgroundOeuvre.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  .containerOeuvre2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .lienPageHome {
+      text-decoration: none;
+      .titleStreet {
+        color: var(--mainColor);
+        font-family: var(--main-Font);
+        text-align: center;
+        margin: 0%;
+        padding: 2%;
+        height: 10vh;
+        width: 100%;
+        #colorTittle {
+          color: var(--second-color);
+        }
+      }
+    }
+    .rectangle {
+      position: relative;
+      width: 282px;
+      height: 38px;
+      top: 27px;
+    }
+    .titleOeuvre {
+      color: var(--mainColor);
+      font-family: var(--main-Font);
+      margin: 0%;
+      height: 14vh;
+      z-index: 2;
+    }
+  }
+}
