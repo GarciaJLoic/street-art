@@ -1,0 +1,46 @@
+.overlayModalLogin {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+
+.modalStyle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 10px;
+  z-index: 1000;
+  width: 300px;
+  border-radius: 15px;
+}
+
+.loginValidation {
+  border: 1px solid black;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  height: 30%;
+
+  input {
+    width: 80%;
+    color: rgb(148, 147, 147);
+    border: 1px solid rgba(82, 84, 87, 0.3);
+    border-radius: 4px;
+  }
+  .red {
+    background-color: rgb(179, 12, 54);
+  }
+}

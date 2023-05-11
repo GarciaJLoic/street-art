@@ -1,0 +1,160 @@
+// .backgroundAbout {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: flex-start;
+//     height: 100vh;
+//     background-color: black;
+// }
+
+// .streetAppLogo {
+//     margin-top: 10px;
+//     align-self: center;
+//     width: 100px;
+//     z-index: 1000;
+// }
+
+// .containerAbout {
+//     display: flex;
+//     flex-direction: row;
+//     align-items: center;
+//     justify-content: center;
+//     padding-top: 4rem;
+// }
+
+// .titleAbout {
+//     color: var(--second-color);
+//     font-weight: 900;
+//     font-size: 35px;
+//     text-align: center;
+//     margin: 0;
+//     position: relative;
+//     z-index: 1;
+// }
+
+// .bandeauAbout {
+//     position: absolute;
+//     top: 97px;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     z-index: 0;
+// }
+
+// .textAbout {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+//     width: 80%;
+//     color: white;
+//     text-align: justify;
+//     margin: auto;
+//     padding-bottom: 200px;
+//     letter-spacing: px;
+// }
+
+@import url("https://fonts.googleapis.com/css2?family=Macondo&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* BODY */
+
+.containerAllAbout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  z-index: 0;
+  overflow: hidden;
+  font-family: var(--main-font);
+}
+
+/* BACKGROUND */
+
+.containerBGAbout {
+  background-color: rgb(0, 0, 0);
+  height: 100%;
+  flex: 1 0 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 0;
+}
+
+.bgShapesAbout {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  position: relative;
+}
+
+.shape1About-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.shape2About-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.shape1About,
+.shape2About {
+  max-width: 150%;
+  height: auto;
+}
+
+.headerAbout {
+  position: fixed;
+  top: 9px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+}
+
+/* TITLE */
+
+.allAbout {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 20%;
+  left: 10px;
+  right: 0;
+  padding: 0 1rem;
+  z-index: 1;
+}
+
+.titleAbout {
+  color: var(--second-color);
+  font-weight: 900;
+  font-size: 35px;
+  text-align: center;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 2rem;
+  top: -55px;
+}
+
+.bandeauAbout {
+  position: absolute;
+  top: -45px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.textAbout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  color: var(--mainColor);
+  text-align: justify;
+  margin: auto;
+  padding-bottom: 200px;
+  letter-spacing: px;
+}
