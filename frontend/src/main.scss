@@ -1,0 +1,30 @@
+@import "./App.scss";
+@import "./style/Home.scss";
+@import "./style/Menu.scss";
+@import "./style/Exploration.scss";
+@import "./style/Header.scss";
+@import "./style/Map.scss";
+@import "./style/ConnectionButton.scss";
+@import "./style/InscriptionButton.scss";
+@import "./style/About.scss";
+@import "./style/Profil.scss";
+@import "./style/ProfilGallery.scss";
+
+@font-face {
+  font-family: "montserrat";
+  src: url("./assets/fonts/Montserrat-Regular.ttf");
+}
+
+:root {
+  --mainColor: #ffffff;
+  --second-color: #0095a9;
+  --main-font: "montserrat";
+  --third-color: #00515c;
+  --fourth-color: #a84900;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--main-font);
+}
