@@ -1,0 +1,66 @@
+.listQ {
+    background-color: black;
+    color: var(--mainColor);
+    font-family: var(--main-font);
+    list-style-type: none;
+    border-radius: 6px;
+    width: 13vh;
+  }
+
+.bloc {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-evenly;
+  top: 25vh;
+  height: 50vh;
+  position: relative;
+
+  
+  .blocVilles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    #buttonV {
+        background-color: black;
+        color: var( --second-color);
+        border-radius: 6px;
+        border-style: none;
+        height: 42px;
+        width: 110px;
+        font-family: var(--main-font);
+    }
+    #buttonV:hover {
+        background-color:var( --second-color) ;
+        color: black;
+    }
+    .listV{
+        background-color: black;
+        color: var(--mainColor);
+        font-family: var(--main-font);
+        list-style-type: none;
+        position: relative;
+        border-radius: 6px;
+        width: 13vh;
+    }
+  }
+  .blocQuartiers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    #buttonQ {
+        background-color: black;
+        color: var( --second-color);
+        border-radius: 6px;
+        border-style: none;
+        height: 42px;
+        width: 110px;
+        font-family: var(--main-font);
+    }
+    #buttonQ:hover {
+        background-color:var( --second-color) ;
+        color: black;
+    }
+    
+  }
+}
