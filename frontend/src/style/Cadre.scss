@@ -1,0 +1,25 @@
+.containerCadre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  .picture {
+    max-width: 100%;
+    height: 250px;
+  }
+  .containIcon {
+    .icon2 {
+      color: var(--mainColor);
+      align-self: flex-end;
+      font-size: 20px;
+    }
+    .icon2:hover {
+      color: var(--fourth-color);
+    }
+    .icon2Click {
+      color: var(--fourth-color);
+      align-self: flex-end;
+      font-size: 20px;
+    }
+  }
+}
