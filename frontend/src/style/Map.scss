@@ -1,0 +1,191 @@
+.leaflet-container {
+  height: 555px;
+  width: 100%;
+}
+.leaflet-marker-draggable {
+  z-index: 500;
+}
+
+.leaflet-popup-content {
+  width: 260px;
+}
+
+.leaflet-popup-tip-container {
+  width: 90px;
+  height: 90px;
+  margin-left: -50px;
+}
+
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  background: rgba(0, 44, 50, 0.89);
+  backdrop-filter: blur(11px);
+}
+.leaflet-popup-tip {
+  width: 90px;
+  height: 60px;
+  margin: -15px auto 0;
+  pointer-events: auto;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  clip-path: polygon(51% 100%, 0 0, 100% 0);
+}
+
+.map {
+  .block-dropdown {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  #dropdown {
+    background-color: #4b4848;
+    color: #0095a9;
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    width: 135px;
+    appearance: none;
+    text-align: center;
+    font-family: var(--main-font);
+    font-size: 1.2em;
+    padding: 0;
+    font-weight: bold;
+  }
+  .map-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    .modalScore {
+      width: 390px;
+      height: 200px;
+      color: white;
+      position: absolute;
+      z-index: 1000;
+      top: calc(50% - 100px);
+      display: flex;
+      flex-direction: column;
+      backdrop-filter: blur(3.5px);
+      border-radius: 11px;
+      text-align: center;
+      font-size: 1.2em;
+      background: linear-gradient(
+        to right,
+        rgb(168, 73, 0) 30%,
+        rgb(0, 149, 169) 100%
+      );
+      padding: 3px;
+      .modalScoreBackground {
+        background: #002c32;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        border-radius: 9px;
+      }
+      .BackgroundModalCatalogue {
+        width: fit-content;
+        align-self: end;
+        margin-right: 15px;
+        margin-top: 5px;
+      }
+      h2 {
+        color: #0095a9;
+        font-size: 2.2em;
+        margin: 0;
+      }
+      p {
+        line-height: 30px;
+      }
+      .orange {
+        color: #a84900;
+      }
+    }
+  }
+  .buttonBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 0px 15px;
+    margin-top: 80px;
+    img {
+      height: fit-content;
+    }
+    .opacity {
+      opacity: 0;
+    }
+  }
+  .filterCheckbox {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+    .checkbox-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .checkbox {
+        display: none;
+      }
+    }
+  }
+}
+
+.checkbox-label {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ddd;
+  margin: 5px;
+  cursor: pointer;
+  border: solid 2px;
+}
+
+.checkbox:checked + .checkbox-label {
+  background-color: #0095a9;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.blockPopUp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  color: black;
+  font-size: 1.3em;
+  font-family: var(--main-font);
+  .oeuvreMap {
+    width: 260px;
+    height: 220px;
+    border-radius: 8px;
+    margin-top: 8px;
+  }
+  h1 {
+    color: white;
+    font-size: 1.4em;
+    line-height: 20px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+      1px 1px 0 #000;
+  }
+  button {
+    width: 100px;
+    height: 35px;
+    background: #0095a9;
+    border: 3px solid #000;
+    box-shadow: 0px 0px 9px 1px rgba(0, 149, 169, 0.24);
+    border-radius: 6px;
+    color: white;
+    font-size: 1em;
+    margin: 10px 0;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .leaflet-container {
+    height: 600px;
+  }
+}
