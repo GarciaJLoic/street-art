@@ -1,0 +1,26 @@
+.exploration {
+  background-image: url("/src/assets/image/exploration.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+
+  .exploration-title {
+    color: white;
+    display: flex;
+    justify-content: center;
+    background-image: url("/src/assets/image/rectangleTitre.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 136px;
+
+    h2 {
+      position: absolute;
+      margin: 0;
+      margin-top: -10px;
+      font-size: 35px;
+      font-family: var(--main-font);
+      font-weight: 900;
+      letter-spacing: 1px;
+    }
+  }
+}

@@ -1,0 +1,82 @@
+.admin-block-filter {
+  text-align: center;
+  .ajoutOeuvre {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: var(--fourth-color);
+    border: none;
+    border-radius: 5px;
+    font-family: var(--main-font);
+    font-size: 1.2em;
+    padding: 4px 10px;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  .select {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    text-align: center;
+    gap: 45px;
+    #dropdownVille,
+    #dropdownQuartier {
+      background-color: rgba(255, 255, 255, 0.15);
+      color: var(--second-color);
+      border: none;
+      border-radius: 5px;
+      height: 35px;
+      width: 135px;
+      appearance: none;
+      text-align: center;
+      font-family: var(--main-font);
+      font-size: 1.2em;
+      padding: 0;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+  .filterValidateOeuvre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    label {
+      color: var(--second-color);
+      font-weight: bold;
+      font-size: 1em;
+    }
+    .checkbox-label-validate {
+      color: var(--second-color);
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background-color: #ddd;
+      margin: 5px;
+      cursor: pointer;
+      border: solid 2px white;
+    }
+    .checkbox {
+      display: none;
+    }
+  }
+}
+
+.filterCheckbox {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  color: var(--mainColor);
+  .checkbox-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .checkbox {
+      display: none;
+    }
+  }
+}
+.checkbox:checked + .checkbox-label-validate {
+  background-color: var(--second-color);
+  background-repeat: no-repeat;
+  background-position: center;
+}

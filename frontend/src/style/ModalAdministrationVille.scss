@@ -1,0 +1,119 @@
+.overlayModalAdminVille {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  backdrop-filter: blur(3.5px);
+  background-color: #000000b7;
+}
+
+.modalStyleModalAdminVille {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  width: 95%;
+  h1 {
+    margin: 0;
+    color: white;
+  }
+  h2 {
+    margin: 0;
+  }
+}
+
+.adminVille {
+  width: 95%;
+  height: 80%;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: var(--fourth-color);
+  border-radius: 12px;
+  border: 5px solid linear-gradient(
+    rgb(168, 73, 0) 30%,
+    rgb(0, 149, 169) 100%);
+
+  .leaflet-container.leaflet-touch.leaflet-retina.leaflet-safari.leaflet-fade-anim.leaflet-grab.leaflet-touch-drag.leaflet-touch-zoom {
+    display: flex;
+    width: 90%;
+    height: 60%;
+    border-radius: 12px;
+    .leaflet-popup-content {
+      color: white;
+      font-size: large;
+    }
+    .leaflet-popup-close-button {
+      span {
+        color: white;
+        font-size: larger;
+      }
+    }
+    .leaflet-popup-tip {
+      display: none;
+    }
+  }
+
+  .adminVilleQuartier {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 25%;
+
+    .form {
+      height: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      label {
+        font-size: 1.2em;
+        font-weight: 600;
+        margin-bottom: -0.5em;
+      }
+
+      #inputAdminVille {
+        width: 100%;
+        height: 2em;
+        font-size: 1.2em;
+        padding: 0;
+        border: 0;
+        outline: none;
+        box-shadow: -5px 3px 10px #000000a1;
+      }
+    }
+    .errormessage {
+      margin: 0;
+    }
+    .validationVille {
+      height: 50%;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+
+      .buttonModalAdminVille {
+        width: 35%;
+        height: 2.3em;
+        font-size: 1.2em;
+        font-weight: 600;
+        color: white;
+        border: 2px solid black;
+        border-radius: 3px;
+        background-color: var(--third-color);
+        box-shadow: -3px 2px 5px #000000a1;
+      }
+      p {
+        margin: 0;
+      }
+    }
+  }
+}

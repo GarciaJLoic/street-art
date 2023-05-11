@@ -1,0 +1,39 @@
+// .gradient-bg {
+//     position: fixed;
+//     bottom: 0;
+//     left: 0;
+//     right: 0;
+//     height: 50px;
+//     background-image: linear-gradient(to top, rgba(0, 0, 0, 1), transparent );
+//     z-index: -1;
+//   }
+  
+  .links-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    height: 110px; 
+  }
+  
+  .logo {
+    text-decoration: none;
+    color: white;
+    margin-bottom: -30px;
+  }
+  
+  .logo p {
+    display: inline;
+    letter-spacing: 15px;
+    font-size: 10rem;
+  }
+  
+  .selected p {
+    color: var(--fourth-color);
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.587);
+}
+

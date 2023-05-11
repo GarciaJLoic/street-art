@@ -1,0 +1,36 @@
+.adminOeuvres {
+  overflow: auto;
+  max-height: 47%;
+
+  .adminOeuvre:first-child {
+    padding-top: 10px;
+  }
+  .adminOeuvre:last-child {
+    border-bottom: none;
+  }
+  .adminOeuvre {
+    display: flex;
+    border-bottom: solid 1px white;
+    padding: 35px 0px;
+    margin: 8px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    .oeuvreImage {
+      width: 110px;
+      height: 110px;
+      border-radius: 6px;
+    }
+    button {
+      background-color: rgba(255, 255, 255, 0.15);
+      color: var(--second-color);
+      border: none;
+      border-radius: 5px;
+      width: 104px;
+      font-family: var(--main-font);
+      font-size: 1em;
+      font-weight: bold;
+      height: 24px;
+    }
+  }
+}

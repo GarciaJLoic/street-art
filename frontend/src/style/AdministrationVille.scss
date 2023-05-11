@@ -1,0 +1,65 @@
+.selectAdminVille {
+  height: 50%;
+  margin-bottom: -7px;
+  color: var(--second-color);
+  font-size: 1.2em;
+  font-weight: bold;
+  border-radius: 8px;
+  background-color: #302f2f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-color: transparent;
+  outline: none;
+  option {
+    padding: 0;
+    margin: 0;
+    border: none;
+    // text-align: center;
+  }
+}
+
+.blocVilleSelect {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid white;
+  p {
+    font-size: large;
+    margin-top: 1.3em;
+    margin-bottom: 0.3em;
+  }
+}
+.buttonAjouterVille {
+  color: var(--fourth-color);
+  height: 6%;
+  font-size: 1.2em;
+  font-weight: bold;
+  border: 2px solid black;
+  border-radius: 8px;
+  background-color: #302f2f;
+  margin-bottom: 1em;
+  .listeVilles {
+    width: 90%;
+    height: 82%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow: auto;
+  }
+}
+
+// .retourAdmin {
+//   display: inline;
+//   margin-bottom: -80px;
+//   margin-left: -200px;
+//   letter-spacing: 1px;
+//   font-size: 1.5rem;
+//   font-weight: bold;
+//   color: var(--fourth-color);
+//   text-decoration: none;
+//   z-index: 1000;
+// }
