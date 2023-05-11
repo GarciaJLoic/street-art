@@ -1,0 +1,102 @@
+.leaflet-container {
+  height: 500px;
+  width: 100%;
+}
+/* .leaflet-marker-icon {
+  animation: opa 2s 0.2s forwards;
+}
+
+@keyframes opa {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+} */
+.leaflet-marker-draggable {
+  z-index: 500;
+}
+.transitionOpacityOn {
+  opacity: 1;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.map {
+  .block-dropdown {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  #dropdown {
+    background-color: #4b4848;
+    color: #0095a9;
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    width: 135px;
+    appearance: none;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2em;
+    padding: 0;
+    font-weight: bold;
+  }
+  .map-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+  }
+  .buttonBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 0px 15px;
+    margin-top: 80px;
+    img {
+      height: fit-content;
+    }
+    .opacity {
+      opacity: 0;
+    }
+  }
+  .filterCheckbox {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+    .checkbox-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .checkbox {
+        display: none;
+      }
+    }
+  }
+}
+
+.checkbox-label {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ddd;
+  margin: 5px;
+  cursor: pointer;
+  border: solid 2px;
+}
+
+.checkbox:checked + .checkbox-label {
+  background-color: #0095a9;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (min-width: 1000px) {
+  .leaflet-container {
+    height: 600px;
+  }
+}

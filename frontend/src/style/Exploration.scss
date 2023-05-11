@@ -1,0 +1,21 @@
+.exploration {
+  background-color: black;
+  height: 100vh;
+
+  .exploration-title {
+    color: white;
+    display: flex;
+    justify-content: center;
+    background-image: url("/src/assets/image/rectangleTitre.png");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    h2 {
+      margin: 0;
+      padding: 60px;
+      height: 10px;
+      font-size: 1.8em;
+      font-family: "Montserrat", sans-serif;
+    }
+  }
+}
