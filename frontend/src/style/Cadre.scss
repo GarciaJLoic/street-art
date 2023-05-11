@@ -1,0 +1,58 @@
+.containerCadre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.picture {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.mapOeuvre {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  overflow-y: scroll;
+  max-height: 90vh;
+}
+
+.mapOeuvre li {
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.imageWrapper {
+  position: relative;
+  text-align: center;
+  width: 414px;
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  backdrop-filter: blur(10px);
+}
+
+.cadreOeuvre {
+  position: relative;
+  padding-top: 29px;
+  width: 340px;
+  height: 340px;
+  object-fit: cover;
+}
+
+.titleCadre {
+  text-align: center;
+  margin-top: 5px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

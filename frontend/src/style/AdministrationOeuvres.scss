@@ -1,0 +1,25 @@
+.administrationOeuvres {
+  background-image: url("/src/assets/image/bgAdminOeuvre.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  button {
+    cursor: pointer;
+  }
+  .title {
+    color: var(--mainColor);
+    display: flex;
+    justify-content: center;
+    background-image: url("/src/assets/image/oeuvreAdmin.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 125px;
+    margin-bottom: -60px;
+    h2 {
+      margin: 0;
+      height: 25px;
+      font-size: 2.4em;
+      font-family: var(--main-font);
+    }
+  }
+}
