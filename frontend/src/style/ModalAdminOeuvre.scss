@@ -1,0 +1,126 @@
+.overlayModalAdminOeuvre {
+  position: absolute;
+  overflow: scroll;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  .modalAdminOeuvreBackground {
+    background-color: var(--fourth-color);
+    margin: auto;
+    margin-top: auto;
+    width: 85%;
+    min-height: 640px;
+    border-radius: 11px;
+    backdrop-filter: blur(3.5px);
+    padding: 7px;
+    background-image: radial-gradient(#fff 30%, rgba(255, 255, 255, 0) 100%);
+    margin-top: 200px;
+    .modalAdminOeuvre {
+      background: var(--fourth-color);
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      border-radius: 9px;
+      min-height: 640px;
+      h1 {
+        font-weight: 900;
+        font-size: 30px;
+        line-height: 37px;
+        color: #ffffff;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        text-align: center;
+      }
+      .leaflet-container {
+        height: 50%;
+        width: 50%;
+        margin: auto;
+        min-height: 165px;
+        min-width: 180px;
+        border: 3px solid #000000;
+        border-radius: 12px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        .labelFile {
+          font-size: 21px;
+          line-height: 35px;
+          letter-spacing: 0.07em;
+          color: var(--second-color);
+          width: 260px;
+          height: 35px;
+          background: #262626;
+          border: 1px solid #000000;
+          border-radius: 5px;
+          text-align: center;
+        }
+        #file {
+          visibility: hidden;
+        }
+        label {
+          display: flex;
+          flex-direction: column;
+          font-size: 20px;
+        }
+        .select {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          select,
+          input {
+            width: 260px;
+            height: 35px;
+            background: #ffffff;
+            border-radius: 3px;
+            border: none;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            font-size: 18px;
+          }
+        }
+        .button {
+          width: 80%;
+          display: flex;
+          justify-content: space-around;
+          button {
+            width: 109px;
+            height: 41px;
+            background: #00515c;
+            border: 2px solid #000000;
+            box-shadow: -2px 4px 4px rgba(0, 0, 0, 0.62);
+            border-radius: 3px;
+            font-size: 20px;
+            color: #ffffff;
+            font-weight: bold;
+          }
+        }
+      }
+      .validationBlock {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 260px;
+        justify-content: space-around;
+
+        .validationMessage {
+          margin: 5px;
+          font-size: 18px;
+        }
+        .validate {
+          display: flex;
+          flex-direction: row;
+          font-size: 18px;
+        }
+      }
+      .messageFromBack {
+        text-align: center;
+        margin: 5px;
+      }
+    }
+  }
+}

@@ -1,0 +1,104 @@
+.bgRank {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.allAbout {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 20%;
+  left: 10px;
+  right: 0;
+  padding: 0 1rem;
+  z-index: 0;
+}
+
+.titleAbout {
+  color: var(--mainColor);
+  font-weight: 900;
+  font-size: 35px;
+  text-align: center;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 2rem;
+  top: -55px;
+}
+
+.bandeauClassement {
+  position: absolute;
+  top: -46px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.rankArrayContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 25%;
+  left: 0;
+  right: 0;
+  padding: 0 1rem;
+  z-index: 0;
+}
+
+.rankArrayBG {
+  text-align: center;
+  margin: 0;
+  position: relative;
+  z-index: 0;
+}
+
+.rankUlContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 26%;
+  left: 0;
+  right: 0;
+  padding: 0 1rem;
+  z-index: 1000;
+}
+
+.rankingUl {
+  // position: relative;
+  // top: 190px;
+  // left: 43px;
+  // right: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index: 1000;
+}
+
+.rankingUl li {
+  font-family: var(main-font);
+  font-weight: 800;
+  // color: var(--mainColor);
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  padding-top: 10px;
+  border-bottom: 1px solid #000;
+  z-index: 1000;
+}
+
+.rankingUl li:last-child {
+  border-bottom: none;
+}
